@@ -87,6 +87,7 @@ main {
         margin: auto;
         border-radius: 50%;
         border: $secondary-color 3px solid;
+        z-index: 1;
     }
     
     .bio {
@@ -113,6 +114,21 @@ main {
     }
 }
 
+// Skills page
+.meetskills {
+    display: grid;
+    grid-gap: 40px;
+    justify-items: center;
+    text-align: center; 
+}
+
+.meetskills img {
+    max-width: 100px;
+    max-height: 100px;
+    min-width: 100px;
+    min-height: 100px; 
+}
+
 // Footer
 #main-footer {
     text-align: center;
@@ -130,3 +146,11 @@ main {
         color: #eece1a;
         transition: all 0.5s ease-out; 
     }
+
+// Particles effect
+#particles-js {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    pointer-events: none; 
+}
